@@ -19,6 +19,7 @@ class CreateCountiesTable extends Migration
             $table->string('code')->unique();
             $table->timestamps();
         });
+
     }
 
     /**

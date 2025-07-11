@@ -1,8 +1,8 @@
-@extends('admin.schools.layout.principal')
+@extends('admin.schools.listagem.layout.principal')
 
 @section('title', 'GESEN - Dashboard')
 
-@section('school-content')
+@section('listagem-content')
     <!-- Page Wrapper (Corpo)-->
     <div class="page-wrapper">
         <div class="content container-fluid">
@@ -97,10 +97,10 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                                    class="avatar-img rounded-circle"
-                                                                                    src="../assets/img/profiles/avatar-01.jpg"
-                                                                                    alt="User Image">
-                                                                            </a>-->
+                                                                                            class="avatar-img rounded-circle"
+                                                                                            src="../assets/img/profiles/avatar-01.jpg"
+                                                                                            alt="User Image">
+                                                                                    </a>-->
                                                     <a href="student-details.html">Aaliyah</a>
                                                 </h2>
                                             </td>
@@ -130,9 +130,9 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!-- <a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                                    class="avatar-img rounded-circle"
-                                                                                    src="../assets/img/profiles/avatar-03.jpg" alt="User Image">
-                                                                            </a>-->
+                                                                                            class="avatar-img rounded-circle"
+                                                                                            src="../assets/img/profiles/avatar-03.jpg" alt="User Image">
+                                                                                    </a>-->
                                                     <a href="student-details.html">Malynne</a>
                                                 </h2>
                                             </td>
@@ -162,10 +162,10 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                                class="avatar-img rounded-circle"
-                                                                                src="../assets/img/profiles/avatar-02.jpg"
-                                                                                alt="User Image">
-                                                                        </a>-->
+                                                                                        class="avatar-img rounded-circle"
+                                                                                        src="../assets/img/profiles/avatar-02.jpg"
+                                                                                        alt="User Image">
+                                                                                </a>-->
                                                     <a href="student-details.html">Levell Scott</a>
                                                 </h2>
                                             </td>
@@ -195,10 +195,10 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                            class="avatar-img rounded-circle"
-                                                                            src="../assets/img/profiles/avatar-03.jpg"
-                                                                            alt="User Image">
-                                                                        </a>-->
+                                                                                    class="avatar-img rounded-circle"
+                                                                                    src="../assets/img/profiles/avatar-03.jpg"
+                                                                                    alt="User Image">
+                                                                                </a>-->
                                                     <a href="student-details.html">Minnie</a>
                                                 </h2>
                                             </td>
@@ -228,10 +228,10 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                            class="avatar-img rounded-circle"
-                                                                            src="../assets/img/profiles/avatar-04.jpg"
-                                                                            alt="User Image">
-                                                                        </a>-->
+                                                                                    class="avatar-img rounded-circle"
+                                                                                    src="../assets/img/profiles/avatar-04.jpg"
+                                                                                    alt="User Image">
+                                                                                </a>-->
                                                     <a href="student-details.html">Lois A</a>
                                                 </h2>
                                             </td>
@@ -261,10 +261,10 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                            class="avatar-img rounded-circle"
-                                                                            src="../assets/img/profiles/avatar-05.jpg"
-                                                                            alt="User Image">
-                                                                        </a>-->
+                                                                                    class="avatar-img rounded-circle"
+                                                                                    src="../assets/img/profiles/avatar-05.jpg"
+                                                                                    alt="User Image">
+                                                                                </a>-->
                                                     <a href="student-details.html">Calvin</a>
                                                 </h2>
                                             </td>
@@ -294,10 +294,10 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                        class="avatar-img rounded-circle"
-                                                                        src="../assets/img/profiles/avatar-06.jpg"
-                                                                        alt="User Image">
-                                                                    </a>-->
+                                                                                class="avatar-img rounded-circle"
+                                                                                src="../assets/img/profiles/avatar-06.jpg"
+                                                                                alt="User Image">
+                                                                            </a>-->
                                                     <a href="student-details.html">Joe Kelley</a>
                                                 </h2>
                                             </td>
@@ -327,9 +327,9 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                                        class="avatar-img rounded-circle"
-                                                                        src="../assets/img/profiles/avatar-07.jpg"
-                                                                        alt="User Image"></a>-->
+                                                                                class="avatar-img rounded-circle"
+                                                                                src="../assets/img/profiles/avatar-07.jpg"
+                                                                                alt="User Image"></a>-->
                                                     <a href="student-details.html">Vincent</a>
                                                 </h2>
                                             </td>
@@ -359,11 +359,11 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                        class="avatar-img rounded-circle"
-                                                        src="../assets/img/profiles/avatar-08.jpg"
-                                                        alt="User Image">
-                                                    </a>-->
-                                                        <a href="student-details.html">Kozma  Tatari</a>
+                                                                class="avatar-img rounded-circle"
+                                                                src="../assets/img/profiles/avatar-08.jpg"
+                                                                alt="User Image">
+                                                            </a>-->
+                                                    <a href="student-details.html">Kozma  Tatari</a>
                                                 </h2>
                                             </td>
                                             <td>9 A</td>
@@ -392,10 +392,10 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                        class="avatar-img rounded-circle"
-                                                        src="../assets/img/profiles/avatar-09.jpg"
-                                                        alt="User Image">
-                                                        </a>-->
+                                                                class="avatar-img rounded-circle"
+                                                                src="../assets/img/profiles/avatar-09.jpg"
+                                                                alt="User Image">
+                                                                </a>-->
                                                     <a href="student-details.html">John Chambers</a>
                                                 </h2>
                                             </td>
@@ -425,9 +425,9 @@
                                             <td>
                                                 <h2 class="table-avatar">
                                                     <!--<a href="student-details.html" class="avatar avatar-sm me-2"><img
-                                                            class="avatar-img rounded-circle"
-                                                            src="../assets/img/profiles/avatar-10.jpg"
-                                                            alt="User Image"></a>-->
+                                                                    class="avatar-img rounded-circle"
+                                                                    src="../assets/img/profiles/avatar-10.jpg"
+                                                                    alt="User Image"></a>-->
                                                     <a href="student-details.html">Nathan Humphries</a>
                                                 </h2>
                                             </td>

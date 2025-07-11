@@ -17,10 +17,10 @@ class SchoolController extends Controller
         return view('admin.index');
     }
 
-    public function school(){
+    public function school()
+    {
 
-        return view('admin.schools.index');
-
+        return view('admin.schools.listagem.index');
     }
 
     /**
@@ -31,6 +31,11 @@ class SchoolController extends Controller
     public function create()
     {
         //
+    }
+
+     public function formAdicionar()
+    {
+        return view('admin.schools.adicionar.form');
     }
 
     /**

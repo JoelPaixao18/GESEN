@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="{{ route('admin.school.listar') }}" class="active">Listar Escola</a></li>
                         <!--<li><a href="student-details.html">Visualizar Escola</a></li>-->
-                        <li><a href="#">Adicionar Escola</a></li>
+                        <li><a href="{{ route('admin.school.form') }}">Adicionar Escola</a></li>
                         <li><a href="#">Editar Escola</a></li>
                     </ul>
                 </li>

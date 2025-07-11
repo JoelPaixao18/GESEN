@@ -6,22 +6,22 @@
                 <li class="menu-title">
                     <span>Menu Principal</span>
                 </li>
-                <li class="submenu active">
+                <li class="submenu">
                     <a href="{{ route('admin.index') }}"><i class="feather-grid"></i> <span> Painel</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="{{ route('admin.index') }}" class="active">Painel Administrativo</a></li>
-                        <li><a href="teacher-dashboard.html">Painel do Professor</a></li>
-                        <li><a href="student-dashboard.html">Painel do Aluno</a></li>
+                        <li><a href="{{ route('admin.index') }}">Painel Administrativo</a></li>
+                        <li><a href="#">Painel do Professor</a></li>
+                        <li><a href="#">Painel do Aluno</a></li>
                     </ul>
                 </li>
-                <li class="submenu">
-                    <a href="#"><i class="fas fa-solid fa-school"></i> <span> Escola</span> <span
+                <li class="submenu active">
+                    <a href="#"><i class="fas fa-solid fa-school "></i> <span> Escola</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
                         <li><a href="{{ route('admin.school.listar') }}">Listar Escola</a></li>
                         <!--<li><a href="student-details.html">Visualizar Escola</a></li>-->
-                        <li><a href="{{ route('admin.school.form') }}">Adicionar Escola</a></li>
+                        <li><a href="{{ route('admin.school.form') }}" class="active">Adicionar Escola</a></li>
                         <li><a href="#">Editar Escola</a></li>
                     </ul>
                 </li>

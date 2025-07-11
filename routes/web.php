@@ -16,9 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/admin');
 
+// Admin routes
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [SchoolController::class, 'index'])->name('index');
-    Route::get('schools', [SchoolController::class, 'school'])->name('school.listar');
+});
+
+// Schools route
+Route::prefix('admin.schools')->name('admin.')->group(function () {
+    Route::get('listagem', [SchoolController::class, 'school'])->name('school.listar');
+    Route::get('adicionar', [SchoolController::class, 'formAdicionar'])->name('school.form');
 });
 
 

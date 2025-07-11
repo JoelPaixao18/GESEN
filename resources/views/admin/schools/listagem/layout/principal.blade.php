@@ -26,11 +26,11 @@
 </head>
 
 <body>
-    @include('admin.schools.parcial.header')
-    @include('admin.schools.parcial.menu')
+    @include('admin.schools.listagem.parcial.header')
+    @include('admin.schools.listagem.parcial.menu')
 
     <div class="main-wrapper">
-        @yield('school-content')
+        @yield('listagem-content')
     </div>
 
     <script src="{{url('assets/js/jquery-3.6.0.min.js')}}"></script>

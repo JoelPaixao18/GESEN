@@ -21,6 +21,7 @@ class CreateSchoolsTable extends Migration
             $table->string('address');
             $table->string('phone');
             $table->string('email')->unique();
+            $table->enum('schooltype', ['Pública', 'Privada'])->default('Pública'); // 'public' or 'private'
             $table->timestamps();
         });
     }
