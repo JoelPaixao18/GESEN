@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SchoolController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*
-Route::get('/', function () {
-    return view('index');
-});
-*/
+Route::redirect('/', '/admin');
 
-Route::get('/', function () {
-    return view('index');
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/', [SchoolController::class, 'index'])->name('index');
+    Route::get('schools', [SchoolController::class, 'school'])->name('school.listar');
 });
+
+
+
+/*Route::get('/', function () {
+    return view('admin.index');
+});*/
