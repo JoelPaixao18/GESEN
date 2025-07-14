@@ -26,11 +26,11 @@
 </head>
 
 <body>
-    @include('admin.schools.adicionar.parcial.header')
-    @include('admin.schools.adicionar.parcial.menu')
+    @include('admin.students.listagem.parcial.header')
+    @include('admin.students.listagem.parcial.menu')
 
     <div class="main-wrapper">
-        @yield('adicionar-content')
+        @yield('listagem-content')
     </div>
 
     <script src="{{ url('assets/js/jquery-3.6.0.min.js') }}"></script>
@@ -44,7 +44,6 @@
     <script src="{{ url('assets/plugins/datatables/datatables.min.js') }}"></script>
 
     <script src="{{ url('assets/js/script.js') }}"></script>
-    <script src="{{ url('assets/js/category.js') }}"></script>
 </body>
 
 </html>

@@ -2,23 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use App\Model\School;
-
-class SchoolController extends Controller
+class StudentsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-    public function School()
-    {
-
-        return view('admin.schools.listagem.index');
+    public function index() {
+        return view('admin.students.listagem.index');
     }
 
     /**
@@ -28,7 +22,7 @@ class SchoolController extends Controller
      */
     public function create()
     {
-        return view('admin.schools.adicionar.form');
+        //
     }
 
     /**

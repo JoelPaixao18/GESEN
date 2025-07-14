@@ -15,21 +15,21 @@
                         <li><a href="#">Painel do Aluno</a></li>
                     </ul>
                 </li>
-                <li class="submenu active">
+                <li class="submenu ">
                     <a href="#"><i class="fas fa-solid fa-school "></i> <span> Escolas</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="{{ route('admin.school.listar') }}" class="active">Listar Escola</a></li>
+                        <li><a href="{{ route('admin.school.listar') }}">Listar Escola</a></li>
                         <!--<li><a href="student-details.html">Visualizar Escola</a></li>-->
                         <li><a href="{{ route('admin.school.create') }}">Adicionar Escola</a></li>
                         <li><a href="#">Editar Escola</a></li>
                     </ul>
                 </li>
-                <li class="submenu">
+                <li class="submenu active">
                     <a href="#"><i class="fas fa-graduation-cap"></i> <span> Alunos</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="{{ route('admin.student.listar') }}">Listar Alunos</a></li>
+                        <li><a href="{{ route('admin.student.listar') }}" class="active">Listar Alunos</a></li>
                         <li><a href="student-details.html">Visualizar Aluno</a></li>
                         <li><a href="add-student.html">Adicionar Aluno</a></li>
                         <li><a href="edit-student.html">Editar Aluno</a></li>

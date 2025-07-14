@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="{{ route('admin.school.listar') }}">Listar Escola</a></li>
                         <!--<li><a href="student-details.html">Visualizar Escola</a></li>-->
-                        <li><a href="{{ route('admin.school.form') }}">Adicionar Escola</a></li>
+                        <li><a href="{{ route('admin.school.create') }}">Adicionar Escola</a></li>
                         <li><a href="#">Editar Escola</a></li>
                     </ul>
                 </li>
@@ -29,7 +29,7 @@
                     <a href="#"><i class="fas fa-graduation-cap"></i> <span> Alunos</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="students.html">Listar Alunos</a></li>
+                        <li><a href="{{ route('admin.student.listar') }}">Listar Alunos</a></li>
                         <li><a href="student-details.html">Visualizar Aluno</a></li>
                         <li><a href="add-student.html">Adicionar Aluno</a></li>
                         <li><a href="edit-student.html">Editar Aluno</a></li>

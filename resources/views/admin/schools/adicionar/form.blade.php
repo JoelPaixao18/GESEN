@@ -1,6 +1,6 @@
 @extends('admin.schools.adicionar.layout.principal')
 
-@section('title', 'GESEN - Dashboard')
+@section('title', 'GESEN - Escolas')
 
 @section('adicionar-content')
     <div class="page-wrapper">
@@ -29,143 +29,93 @@
                                 <div class="col-sm-12">
                                     <div class="card comman-shadow">
                                         <div class="card-body">
-                                            <form action="" method="post">
+                                            <form action="#" method="post">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <h5 class="form-title student-info">Informações da Escola <span><a
-                                                                    href="javascript:;"><i
-                                                                        class="feather-more-vertical"></i></a></span></h5>
+                                                        <h5 class="form-title student-info">Informações da Escola <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
                                                     </div>
                                                     <div class="col-12 col-sm-4">
                                                         <div class="form-group local-forms">
-                                                            <label>Nome da Escola (Instituição) <span
-                                                                    class="login-danger">*</span></label>
-                                                            <input class="form-control" type="text"
-                                                                placeholder="Digite o nome">
+                                                            <label>Nome da Escola (Instituição) <span class="login-danger">*</span></label>
+                                                            <input class="form-control" type="text" placeholder="Digite o nome" name="school_name">
                                                         </div>
                                                     </div>
-                                                    <!-- <div class="col-12 col-sm-4">
-                                                                                                                                                <div class="form-group local-forms">
-                                                                                                                                                    <label>Last Name <span class="login-danger">*</span></label>
-                                                                                                                                                    <input class="form-control" type="text"
-                                                                                                                                                        placeholder="Enter First Name">
-                                                                                                                                                </div>
-                                                                                                                                            </div>-->
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                                                                                <div class="form-group local-forms">
-                                                                                                                                                    <label>Gender <span class="login-danger">*</span></label>
-                                                                                                                                                    <select class="form-control select">
-                                                                                                                                                        <option>Select Gender</option>
-                                                                                                                                                        <option>Female</option>
-                                                                                                                                                        <option>Male</option>
-                                                                                                                                                        <option>Others</option>
-                                                                                                                                                    </select>
-                                                                                                                                                </div>
-                                                                                                                                            </div>-->
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                                                                    <div class="form-group local-forms calendar-icon">
-                                                                                                                                        <label>Date Of Birth <span class="login-danger">*</span></label>
-                                                                                                                                        <input class="form-control datetimepicker" type="text"
-                                                                                                                                            placeholder="DD-MM-YYYY">
-                                                                                                                                    </div>
-                                                                                                                                </div>-->
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                                                                <div class="form-group local-forms">
-                                                                                                                                    <label>Roll </label>
-                                                                                                                                    <input class="form-control" type="text"
-                                                                                                                                        placeholder="Enter Roll Number">
-                                                                                                                                </div>
-                                                                                                                        </div>-->
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                                                            <div class="form-group local-forms">
-                                                                                                                                <label>Blood Group <span class="login-danger">*</span></label>
-                                                                                                                                <select class="form-control select">
-                                                                                                                                    <option>Please Select Group </option>
-                                                                                                                                    <option>B+</option>
-                                                                                                                                    <option>A+</option>
-                                                                                                                                    <option>O+</option>
-                                                                                                                                </select>
-                                                                                                                            </div>
-                                                                                                                        </div>-->
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                                                            <div class="form-group local-forms">
-                                                                                                                                <label>Religion <span class="login-danger">*</span></label>
-                                                                                                                                <select class="form-control select">
-                                                                                                                                    <option>Please Select Religion </option>
-                                                                                                                                    <option>Hindu</option>
-                                                                                                                                    <option>Christian</option>
-                                                                                                                                    <option>Others</option>
-                                                                                                                                </select>
-                                                                                                                            </div>
-                                                                                                                    </div>-->
                                                     <div class="col-12 col-sm-4">
                                                         <div class="form-group local-forms">
                                                             <label>E-Mail <span class="login-danger">*</span></label>
-                                                            <input class="form-control" type="email"
-                                                                placeholder="Endereço de Email">
+                                                            <input class="form-control" type="email" placeholder="Endereço de Email" name="school_email">
                                                         </div>
                                                     </div>
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                                                        <div class="form-group local-forms">
-                                                                                                                            <label>Class <span class="login-danger">*</span></label>
-                                                                                                                            <select class="form-control select">
-                                                                                                                                <option>Please Select Class </option>
-                                                                                                                                <option>12</option>
-                                                                                                                                <option>11</option>
-                                                                                                                                <option>10</option>
-                                                                                                                            </select>
-                                                                                                                        </div>
-                                                                                                                    </div>-->
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                                                    <div class="form-group local-forms">
-                                                                                                                        <label>Section <span class="login-danger">*</span></label>
-                                                                                                                        <select class="form-control select">
-                                                                                                                            <option>Please Select Section </option>
-                                                                                                                            <option>B</option>
-                                                                                                                            <option>A</option>
-                                                                                                                            <option>C</option>
-                                                                                                                        </select>
-                                                                                                                    </div>
-                                                                                                                </div>-->
                                                     <div class="col-12 col-sm-4">
                                                         <div class="form-group local-forms">
                                                             <label>Nº da Escola </label>
-                                                            <input class="form-control" type="text"
-                                                                placeholder="ID da Escola">
+                                                            <input class="form-control" type="text" placeholder="ID da Escola" name="school_id">
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-4">
                                                         <div class="form-group local-forms">
-                                                            <label>Nº Telefónico </label>
-                                                            <input class="form-control" type="text"
-                                                                placeholder="Contacto Telefónico">
+                                                            <label>Nº Telefónico <span class="login-danger">*</span></label>
+                                                            <input class="form-control" type="text" placeholder="Contacto Telefónico" name="school_phone">
                                                         </div>
                                                     </div>
-                                                    <!--<div class="col-12 col-sm-4">
-                                                                                            <div class="form-group students-up-files">
-                                                                                                <label>Upload Student Photo (150px X 150px)</label>
-                                                                                                <div class="uplod">
-                                                                                                <label class="file-upload image-upbtn mb-0">
-                                                                                                    Choose File <input type="file">
-                                                                                                /label>
-                                                                                            </div>
-                                                                                            </div>
-                                                                                        </div>-->
                                                     <div class="col-12 col-sm-4">
                                                         <div class="form-group local-forms">
                                                             <label>Localização </label>
-                                                            <input class="form-control" type="text"
-                                                                placeholder="Endereço da Escola">
+                                                            <input class="form-control" type="text" placeholder="Endereço da Escola" name="school_address">
                                                         </div>
                                                     </div>
+                                                    <!-- Tipo de Escola (Ctegorias)-->
                                                     <div class="col-12 col-sm-4">
                                                         <div class="form-group local-forms">
-                                                            <label>Tipo de Escola <span
-                                                                    class="login-danger">*</span></label>
-                                                            <select class="form-control select">
-                                                                <option>Por Favor Seleciona o Tipo de Escola </option>
-                                                                <option>Pública</option>
-                                                                <option>Privada</option>
+                                                            <label>Tipo de Escola <span class="login-danger">*</span></label>
+                                                            <select class="form-control select" id="school_type" name="school_type" required>
+                                                                <option value="">Por Favor Seleciona o Tipo de Escola</option>
+                                                                <option value="publica">Pública</option>
+                                                                <option value="privada">Privada</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Nível de Escola (Categorias "essa opção vale para os dois tipos (Pública e Privada)")-->
+                                                    <div class="col-12 col-sm-4" id="nivel-div" style="display: none;">
+                                                        <div class="form-group local-forms">
+                                                            <label>Nivel de Escola <span class="login-danger">*</span></label>
+                                                            <select class="form-control select" name="school_level" id="school_level" required>
+                                                                <option value="">Seleciona o Nivel de Escola</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Categoria de Escola (Categorias "essa opção vale apenas para o Tipo "Privado" deve aparecer ao mesmo tempo que o nivel de escola ")-->
+                                                    <div class="col-12 col-sm-4" id="categoria-div" style="display: none;">
+                                                        <div class="form-group local-forms">
+                                                            <label>Categoria de Escola <span class="login-danger">*</span></label>
+                                                            <select class="form-control select" name="school_category" id="school_category" required>
+                                                                <option value="">Selecione a Categoria da Escola</option>
+                                                                <option value="a">Categoria A</option>
+                                                                <option value="b">Categoria B</option>
+                                                                <option value="c">Categoria C</option>
+                                                                <option value="d">Categoria D</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Cursos (Categorias "Essa opção é apenas para o IIº ciclo")-->
+                                                    <div class="col-12 col-sm-4" id="curso-div" style="display: none;">
+                                                        <div class="form-group local-forms">
+                                                            <label>Curso <span class="login-danger">*</span></label>
+                                                            <select class="form-control select" id="school_course" name="school_course" required>
+                                                                <option value="">Selecione o Curso</option>
+                                                                <option value="informatica">Informática</option>
+                                                                <option value="eletronica">Eletrónica</option>
+                                                                <option value="multimidia">Multimídia</option>
+                                                                <option value="enfermagem">Enfermagem</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Classes (Categorias depende do nivel de escola " Iº ciclo e IIº ciclo (à do IIº ciclo vai depender do curso, ou seja, cada curso selecionado aparece o campo das classes do IIº ciclo)" )-->
+                                                    <div class="col-12 col-sm-4" id="classe-div" style="display: none;">
+                                                        <div class="form-group local-forms">
+                                                            <label>Classes <span class="login-danger">*</span></label>
+                                                            <select class="form-control select" name="school_class" id="school_class" required>
+                                                                <option value="">Por Favor Selecione a Classe</option>
                                                             </select>
                                                         </div>
                                                     </div>
