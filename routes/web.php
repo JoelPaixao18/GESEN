@@ -38,11 +38,11 @@ Route::prefix('admin.schools')->name('admin.')->group(function () {
 Route::prefix('admin.students')->name('admin.')->group(function () {
     Route::get('listagem', [StudentsController::class, 'index'])->name('student.listar');
     Route::get('adicionar', [StudentsController::class, 'create'])->name('student.create');
+    Route::get('detalhes', [SchoolController::class, 'show'])->name('student.show');
     //Route::post('adicionar', [SchoolController::class, 'storeStudent'])->name('student.store');
     //Route::get('editar', [SchoolController::class, 'editStudent'])->name('student.edit');
     //Route::put('editar/{id}', [SchoolController::class, 'updateStudent'])->name('student.update');
     //Route::delete('excluir/{id}', [SchoolController::class, 'destroy  Student'])->name('student.destroy');
-    //Route::get('detalhes/{id}', [SchoolController::class, 'showStudent'])->name('student.show');
 });
 
 

@@ -30,8 +30,8 @@
                             class="menu-arrow"></span></a>
                     <ul>
                         <li><a href="{{ route('admin.student.listar') }}" class="active">Listar Alunos</a></li>
-                        <li><a href="student-details.html">Visualizar Aluno</a></li>
-                        <li><a href="add-student.html">Adicionar Aluno</a></li>
+                        <li><a href="{{ route('admin.student.show') }}">Visualizar Aluno</a></li>
+                        <li><a href="{{ route('admin.student.create') }}">Adicionar Aluno</a></li>
                         <li><a href="edit-student.html">Editar Aluno</a></li>
                     </ul>
                 </li>

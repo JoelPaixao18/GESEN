@@ -1,6 +1,6 @@
 @extends('admin.students.listagem.layout.principal')
 
-@section('title', 'GESEN - Estudantes')
+@section('title', 'GESEN - Alunos')
 
 @section('listagem-content')
 
@@ -63,7 +63,8 @@
                                                 class="feather-grid"></i></a>
                                         <a href="#" class="btn btn-outline-primary me-2"><i
                                                 class="fas fa-download"></i> Download</a>
-                                        <a href="add-student.html" class="btn btn-primary"><i class="fas fa-plus"></i></a>
+                                        <a href="{{ route('admin.student.create') }}" class="btn btn-primary"><i
+                                                class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -418,7 +419,8 @@
                                                 <h2 class="table-avatar">
                                                     <a href="student-details.html" class="avatar avatar-sm me-2"><img
                                                             class="avatar-img rounded-circle"
-                                                            src="../assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
+                                                            src="../assets/img/profiles/avatar-10.jpg"
+                                                            alt="User Image"></a>
                                                     <a href="student-details.html">Nathan Humphries</a>
                                                 </h2>
                                             </td>

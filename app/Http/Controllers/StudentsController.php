@@ -22,7 +22,7 @@ class StudentsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.students.adicionar.index');
     }
 
     /**
@@ -44,9 +44,10 @@ class StudentsController extends Controller
      */
     public function show($id)
     {
-        //
-    }
+        //return view('admin.students.detalhes.index', compact('id'));
+        return view('admin.students.detalhes.index');
 
+    }
     /**
      * Show the form for editing the specified resource.
      *

@@ -15,6 +15,7 @@
                         <li><a href="student-dashboard.html">Painel do Aluno</a></li>
                     </ul>
                 </li>
+                <!-- Menu Escolas -->
                 <li class="submenu">
                     <a href="#"><i class="fas fa-solid fa-school"></i> <span> Escola</span> <span
                             class="menu-arrow"></span></a>
@@ -25,16 +26,18 @@
                         <li><a href="#">Editar Escola</a></li>
                     </ul>
                 </li>
+                <!-- Menu Alunos -->
                 <li class="submenu">
                     <a href="#"><i class="fas fa-graduation-cap"></i> <span> Alunos</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
                         <li><a href="{{ route('admin.student.listar') }}">Listar Alunos</a></li>
-                        <li><a href="student-details.html">Visualizar Aluno</a></li>
-                        <li><a href="add-student.html">Adicionar Aluno</a></li>
+                        <li><a href="{{ route('admin.student.show') }}">Visualizar Aluno</a></li>
+                        <li><a href="{{ route('admin.student.create') }}">Adicionar Aluno</a></li>
                         <li><a href="edit-student.html">Editar Aluno</a></li>
                     </ul>
                 </li>
+                <!-- Menu Professores -->
                 <li class="submenu">
                     <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Professores</span> <span
                             class="menu-arrow"></span></a>

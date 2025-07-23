@@ -7,6 +7,7 @@
     <title>@yield('title')</title>
 
     <link rel="shortcut icon" href="{{ url('assets/img/favicon1.png') }}">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/css/tom-select.css" rel="stylesheet">
 
     <link
         href="{{ url('../../fonts.googleapis.com/css2ccf1.css?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&amp;display=swap') }}"
@@ -18,11 +19,16 @@
 
     <link rel="stylesheet" href="{{ url('assets/plugins/icons/flags/flags.css') }}">
 
+    <link rel="stylesheet" href="{{ url('assets/plugins/select2/css/select2.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url('assets/css/feather.css') }}">
+
     <link rel="stylesheet" href="{{ url('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/plugins/fontawesome/css/all.min.css') }}">
 
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/new-style.css') }}">
+
 </head>
 
 <body>
@@ -45,6 +51,7 @@
 
     <script src="{{ url('assets/js/script.js') }}"></script>
     <script src="{{ url('assets/js/category.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/js/tom-select.complete.min.js"></script>
 </body>
 
 </html>
