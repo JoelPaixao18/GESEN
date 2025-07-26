@@ -87,33 +87,35 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check check-tables">
-                                                    <input class="form-check-input" type="checkbox" value="something">
-                                                </div>
-                                            </td>
-                                            <td>PRE2209</td>
-                                            <td>
-                                                <h2 class="table-avatar">
-                                                    <a href="student-details.html">AAAAAAA</a>
-                                                </h2>
-                                            </td>
-                                            <td>Pública</td>
-                                            <td>Iº Ciclo</td>
-                                            <td>097 3584 5870</td>
-                                            <td>911 Deer Ridge Drive,USA</td>
-                                            <td class="text-end">
-                                                <div class="actions ">
-                                                    <a href="javascript:;" class="btn btn-sm bg-success-light me-2 ">
-                                                        <i class="feather-eye"></i>
-                                                    </a>
-                                                    <a href="edit-student.html" class="btn btn-sm bg-danger-light">
-                                                        <i class="feather-edit"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                        @foreach ($schools as $school)
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check check-tables">
+                                                        <input class="form-check-input" type="checkbox" value="something">
+                                                    </div>
+                                                </td>
+                                                <td>{{ $school->id }}</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="#">{{ $school->name }}</a>
+                                                    </h2>
+                                                </td>
+                                                <td>{{ $school->schoolType }}</td>
+                                                <td>{{ $school->schoolLevel }}</td>
+                                                <td>{{ $school->phone }}</td>
+                                                <td>{{$school->address}}</td>
+                                                <td class="text-end">
+                                                    <div class="actions ">
+                                                        <a href="javascript:;" class="btn btn-sm bg-success-light me-2 ">
+                                                            <i class="feather-eye"></i>
+                                                        </a>
+                                                        <a href="edit-student.html" class="btn btn-sm bg-danger-light">
+                                                            <i class="feather-edit"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        @endforeach
 
                                     </tbody>
                                 </table>

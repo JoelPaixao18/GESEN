@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use App\Model\School;
+use App\Models\School;
 
 class SchoolController extends Controller
 {
@@ -18,7 +18,10 @@ class SchoolController extends Controller
     public function School()
     {
 
-        return view('admin.schools.listagem.index');
+        $schools = School::all();
+        //dd($schools);
+
+        return view('admin.schools.listagem.index', compact('schools'));
     }
 
     /**
