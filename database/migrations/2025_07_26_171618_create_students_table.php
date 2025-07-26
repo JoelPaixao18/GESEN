@@ -19,9 +19,14 @@ class CreateStudentsTable extends Migration
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->date('date_of_birth')->nullable();
-            $table->string('address')->nullable();
-            $table->enum('gender', ['Female', 'Male', 'Other'])->default('Other');
+            $table->enum('gender', ['Feminino', 'Masculino', 'Outro'])->default('Outro');
             $table->string('process_number')->unique();
+	        $table->unsignedBigInteger('id_schools');
+	        $table->unsignedBigInteger('id_provinces');
+	        $table->unsignedBigInteger('id_counties');
+	        $table->foreign('id_schools')->references('id')->on('schools')->onDelete('cascade');
+	        $table->foreign('id_provinces')->references('id')->on('provinces')->onDelete('cascade');
+	        $table->foreign('id_counties')->references('id')->on('counties')->onDelete('cascade');
             $table->timestamps();
         });
     }

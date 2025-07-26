@@ -19,10 +19,12 @@ class CreateTeachersTable extends Migration
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->date('date_of_birth')->nullable();
-            $table->string('address')->nullable();
-            $table->enum('gender', ['Female', 'Male', 'Other'])->default('Other');
+            $table->enum('gender', ['Feminino', 'Masculino', 'Outro'])->default('Outro');
             $table->string('process_number')->unique();
             $table->string('function')->nullable();
+	        $table->unsignedBigInteger('id_schools');
+	        $table->foreign('id_schools')->references('id')->on('schools')->onDelete('cascade');
+	        $table->timestamps();
         });
     }
 
